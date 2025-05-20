@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>How to Read Hangul</title>
+    <link rel="stylesheet" href="read.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <header>
+        <section class="container">
+            <br>
+            <a href="/index.html" class="waves-effect waves-light btn-small cyan darken-1">Home</a>
+        </section>
+    </header>
+    <br>
+    <section class="container z-depth-2">
+        <div class="container center">
+            <h3 class="z-depth-2 orange darken-3 white-text" style="display: inline-block; padding: 1rem 1rem;">
+                How to Read
+            </h3>
+        </div>
+        <div style="display: inline-block; padding: 1rem 1rem;">
+            <p>
+                Instead of being written sequentially like the letters of the Latin script, Hangul letters are grouped into blocks, 
+                such as 한 (han), each of which represents a syllable. That said, although the syllable 한 may look like a single character, 
+                it is actually composed of three letters: ㅎ (h), ㅏ (a), and ㄴ (n).
+            </p>
+            <p>
+                Each syllabic block consists of two to six letters, including at least one consonant and one vowel. 
+                These blocks are then arranged horizontally from left to right or vertically from top to bottom.
+            </p>
+            <p>
+                There are 9 main types of layouts as shown below:
+            </p>
+            <div class="syllable-container">
+                <div class="syllable two-part-horizontal">
+                    <div class="block-vertical initial">initial</div>
+                    <div class="block-vertical vowel">vowel</div>
+                </div>
+            
+                <div class="syllable two-part-vertical">
+                    <div class="block-horizontal initial">initial</div>
+                    <div class="block-horizontal vowel">vowel</div>
+                </div>
+            
+                <div class="syllable three-part">
+                    <div class="block initial" style="grid-area: a">initial</div>
+                    <div class="block vowel" style="grid-area: b">vowel 1</div>
+                    <div class="block-vertical vowel" style="grid-area: c">vowel 2</div>
+                </div>     
+            </div>
+
+            <div class="syllable-container">
+                <div class="syllable-group">
+                    <p>가 (ga)</p>
+                    <div class="syllable two-part-horizontal">
+                        <div class="block-vertical initial">ㄱ</div>
+                        <div class="block-vertical vowel">ㅏ</div>
+                    </div>
+                </div>
+            
+                <div class="syllable-group">
+                    <p>구 (gu)</p>
+                    <div class="syllable two-part-vertical">
+                        <div class="block-horizontal initial">ㄱ</div>
+                        <div class="block-horizontal vowel">ㅜ</div>
+                    </div>
+                </div>
+            
+                <div class="syllable-group">
+                    <p>귀 (gwi)</p>
+                    <div class="syllable three-part">
+                        <div class="block initial" style="grid-area: a">ㄱ</div>
+                        <div class="block vowel" style="grid-area: b">ㅜ</div>  
+                        <div class="block-vertical vowel" style="grid-area: c">ㅣ</div>
+                    </div>
+                </div>          
+            </div>
+            <br>
+            <br>
+            <p>
+                A final consonant, if there is one, is always written at the bottom, under the vowel:
+            </p>
+            <div class="syllable-container">
+                <div class="syllable three-part-two">
+                    <div class="block initial" style="grid-area: a">initial</div>
+                    <div class="block vowel" style="grid-area: b">vowel</div>
+                    <div class="block-horizontal final" style="grid-area: c">final</div>
+                </div>
+            
+                <div class="syllable three-part-vertical">
+                    <div class="block-horizontal-three initial">initial</div>
+                    <div class="block-horizontal-three vowel">vowel</div>
+                    <div class="block-horizontal-three final">final</div>
+                </div>
+            
+                <div class="syllable four-part-two">
+                    <div class="block-horizontal-three-two initial" style="grid-area: a">initial</div>
+                    <div class="block-horizontal-three-two vowel" style="grid-area: b">vowel 1</div>
+                    <div class="block-vertical-two vowel" style="grid-area: c">vowel 2</div>
+                    <div class="block-horizontal-three-three final" style="grid-area: d">final</div>
+                </div>      
+            </div>
+        
+            <div class="syllable-container">
+                <div class="syllable-group">
+                    <p>간 (gan)</p>
+                    <div class="syllable three-part-two">
+                        <div class="block initial" style="grid-area: a">ㄱ</div>
+                        <div class="block vowel" style="grid-area: b">ㅏ</div>
+                        <div class="block-horizontal final" style="grid-area: c">ㄴ</div>
+                    </div>
+                </div>
+            
+                <div class="syllable-group">
+                    <p>군 (gun)</p>
+                    <div class="syllable three-part-vertical">
+                        <div class="block-horizontal-three initial">ㄱ</div>
+                        <div class="block-horizontal-three vowel">ㅜ</div>
+                        <div class="block-horizontal-three final">ㄴ</div>
+                    </div>
+                </div>
+            
+                <div class="syllable-group">
+                    <p>귄 (gwin)</p>
+                    <div class="syllable four-part-two">
+                        <div class="block-horizontal-three-two initial" style="grid-area: a">ㄱ</div>
+                        <div class="block-horizontal-three-two vowel" style="grid-area: b">ㅜ</div>
+                        <div class="block-vertical-two vowel" style="grid-area: c">ㅣ</div>
+                        <div class="block-horizontal-three-three final" style="grid-area: d">ㄴ</div>
+                    </div>
+                </div>          
+            </div>
+            <br>
+            <br>
+            <p>
+                A complex final is written left to right:
+            </p>
+            <div class="syllable-container">
+                <div class="syllable four-part">
+                    <div class="block initial">initial</div>
+                    <div class="block vowel">vowel</div>
+                    <div class="block final">final 1</div>
+                    <div class="block final">final 2</div>
+                </div>
+            
+                <div class="syllable four-part-three">
+                    <div class="block-horizontal-three-three initial" style="grid-area: a">initial</div>
+                    <div class="block-horizontal-three-three vowel" style="grid-area: b">vowel</div>
+                    <div class="block-horizontal-three-two final" style="grid-area: c">final 1</div>
+                    <div class="block-horizontal-three-two final" style="grid-area: d">final 2</div>
+                </div>
+            
+                <div class="syllable four-part-four">
+                    <div class="block-horizontal-three-two initial" style="grid-area: a">initial</div>
+                    <div class="block-horizontal-three-two vowel" style="grid-area: b">vowel 1</div>
+                    <div class="block-vertical-two vowel" style="grid-area: c">vowel 2</div>
+                    <div class="block-horizontal-three-two final" style="grid-area: d">final 1</div>
+                    <div class="block-horizontal-three-two final" style="grid-area: e">final 2</div>
+                </div>         
+            </div>
+        
+            <div class="syllable-container">
+                <div class="syllable-group">
+                    <p>많 (manh)</p>
+                    <div class="syllable four-part">
+                        <div class="block initial">ㅁ</div>
+                        <div class="block vowel">ㅏ</div>
+                        <div class="block final">ㄴ</div>
+                        <div class="block final">ㅎ</div>
+                    </div>
+                </div>
+            
+                <div class="syllable-group">
+                    <p>흙 (heulg)</p>
+                    <div class="syllable four-part-three">
+                        <div class="block-horizontal-three-three initial" style="grid-area: a">ㅎ</div>
+                        <div class="block-horizontal-three-three vowel" style="grid-area: b">ㅡ</div>
+                        <div class="block-horizontal-three-two final" style="grid-area: c">ㄹ</div>
+                        <div class="block-horizontal-three-two final" style="grid-area: d">ㄱ</div>
+                    </div>
+                </div>
+            
+                <div class="syllable-group">
+                    <p>귆 (gwinh)</p>
+                    <div class="syllable four-part-four">
+                        <div class="block-horizontal-three-two initial" style="grid-area: a">ㄱ</div>
+                        <div class="block-horizontal-three-two vowel" style="grid-area: b">ㅜ</div>
+                        <div class="block-vertical-two vowel" style="grid-area: c">ㅣ</div>
+                        <div class="block-horizontal-three-two final" style="grid-area: d">ㄴ</div>
+                        <div class="block-horizontal-three-two final" style="grid-area: e">ㅎ</div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </section>
+    <br>
+</body>
+</html>

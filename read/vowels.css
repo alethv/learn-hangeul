@@ -1,0 +1,22 @@
+th {
+    background: #64dd17;
+    color: white;
+    border-radius: 0 !important; /* elimina esquinas redondeadas */
+}
+
+th:first-child {
+    border-top-left-radius: 0 !important;
+}
+
+th:last-child {
+    border-top-right-radius: 0 !important;
+}
+
+table.striped {
+    border-collapse: separate;
+    border-spacing: 1px 0; /* 8px entre columnas, 0px entre filas */
+}
+
+table.striped th, table.striped td {
+    text-align: center;
+}

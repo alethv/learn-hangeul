@@ -1,0 +1,12 @@
+/* fonts.css */
+body {
+    font-size: 18px; /* Tamaño base más grande */
+}
+
+table, th, td {
+    font-size: 18px; /* Para que las tablas también crezcan */
+}
+
+p {
+    font-size: 1.2rem;
+}

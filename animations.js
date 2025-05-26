@@ -1,5 +1,5 @@
 function animateContainers() {
-  const containers = document.querySelectorAll('.anim-container');
+  const containers = document.querySelectorAll('.anim-container, .anim-container-1');
 
   containers.forEach((container, index) => {
     container.style.opacity = 0;
@@ -14,8 +14,11 @@ function animateContainers() {
       delay: 300 + index * 200
     });
 
-    // Añadir eventos solo una vez (evita duplicación si pageshow ocurre)
-    if (!container.dataset.listenersAttached) {
+    // Solo aplicar eventos hover a .anim-container
+    if (
+      container.classList.contains('anim-container') &&
+      !container.dataset.listenersAttached
+    ) {
       container.addEventListener('mouseenter', () => {
         anime({
           targets: container,
@@ -40,6 +43,7 @@ function animateContainers() {
     }
   });
 }
+
 
 document.querySelectorAll('.anim-link').forEach(link => {
   link.addEventListener('click', e => {

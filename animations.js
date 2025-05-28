@@ -22,8 +22,8 @@ function animateContainers() {
       container.addEventListener('mouseenter', () => {
         anime({
           targets: container,
-          scale: 1.03,
-          boxShadow: '0 15px 30px rgba(0,0,0,0.3)',
+          scale: 1.05,
+          // boxShadow: '0 15px 30px rgba(0,0,0,0.3)',
           easing: 'easeOutExpo',
           duration: 400
         });
@@ -33,7 +33,7 @@ function animateContainers() {
         anime({
           targets: container,
           scale: 1,
-          boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
+          // boxShadow: '0 4px 10px rgba(0,0,0,0.2)',
           easing: 'easeOutExpo',
           duration: 400
         });
